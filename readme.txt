@@ -45,6 +45,11 @@ You can also call the $statsd global class in other plugin/theme code for instan
 
 See the FAQ for more advanced configuration.
 
+== Screenshots ==
+
+1. Example dashboard created in Graphite with data collected from this plugin.
+2. Track any other application stat in your WordPress site with 1 line of code in your plugin/theme.
+
 == Frequently Asked Questions ==
 By default the parent namespace used for stats is "yourdomain_yourpath.wordpress.*" where yourdomain_yourpath would be "www_domain_com_blog" if your site is http://www.domain.com/blog/. You can override the parent namespace via the `define('STATSD_NAMESPACE', 'mysite.myserver');` define in wp-config.php. This one is very important, controls how it shows up in Graphite stats.
 This should be segmented, left to right general to specific. All "." trigger segments. For example:
