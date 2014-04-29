@@ -1,5 +1,5 @@
 === StatsD WordPress Client ===
-Contributors: uglyrobot, WPMUDEV
+Contributors: uglyrobot
 Tags: statsd, stats, metrics, graphite, multisite, monitoring
 Requires at least: 3.7
 Tested up to: 3.9.1
@@ -37,7 +37,7 @@ You can also call the $statsd global class in other plugin/theme code for instan
 
 == Installation ==
 
-1.  Install <a href="https://github.com/etsy/statsd">StatsD</a> on localhost or a or a server on your private network.
+1.  Install <a href="https://github.com/etsy/statsd">StatsD</a> on localhost or a server on your private network.
 1.  If StatsD is not on localhost, define the local daemon IP in wp-config.php: `define( 'STATSD_IP', 'x.x.x.x' );`
 1.  Install the plugin
 1.  Activate or Network Activate on multisite
