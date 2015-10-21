@@ -246,7 +246,7 @@ class WordPress_StatsD {
 	}
 	
 	public function pre_http($false, $r, $url) {
-		if ( ! is_multisite() ) {
+		if ( ! is_multisite() || defined( 'SKIP_URL_METRICS' ) ) {
 			if ( false !== strpos( parse_url($url, PHP_URL_PATH), 'wp-cron.php' ) ) {
 				$url = 'wp_cron';
 			} else {
@@ -260,7 +260,7 @@ class WordPress_StatsD {
 	}
 	
 	public function post_http($response, $type, $class, $args, $url) {
-		if ( ! is_multisite() ) {
+		if ( ! is_multisite() || defined( 'SKIP_URL_METRICS' ) ) {
 			if ( false !== strpos( parse_url($url, PHP_URL_PATH), 'wp-cron.php' ) ) {
 				$url = 'wp_cron';
 			} else {

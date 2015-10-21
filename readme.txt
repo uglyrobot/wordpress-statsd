@@ -61,6 +61,8 @@ If needed you can overide the default UDP port of 8125 via `define('STATSD_PORT'
 
 If you have a very high traffic site you can lower the default 0.5 sample rate for per-pageload calls via `STATSD_SAMPLE_RATE`.
 
+If you don't want to send metrics per page URL, you can disable this via SKIP_URL_METRICS
+
 Contribute at <a href="https://github.com/uglyrobot/wordpress-statsd">GitHub</a>.
 
 == To Do ==
