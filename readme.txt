@@ -2,8 +2,8 @@
 Contributors: uglyrobot
 Tags: statsd, stats, metrics, graphite, multisite, monitoring
 Requires at least: 3.7
-Tested up to: 3.9.1
-Stable tag: 0.1
+Tested up to: 4.6
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,8 @@ Requires <a href="https://github.com/etsy/statsd">StatsD</a> on localhost or a s
 
 You can also call the $statsd global class in other plugin/theme code for instant tracking of any application metric. See API usage instructions: https://github.com/domnikl/statsd-php/blob/develop/README.md
 
+Contribute at <a href="https://github.com/uglyrobot/wordpress-statsd">GitHub</a>.
+
 == Installation ==
 
 1.  Install <a href="https://github.com/etsy/statsd">StatsD</a> on localhost or a server on your private network.
@@ -61,7 +63,7 @@ If needed you can overide the default UDP port of 8125 via `define('STATSD_PORT'
 
 If you have a very high traffic site you can lower the default 0.5 sample rate for per-pageload calls via `STATSD_SAMPLE_RATE`.
 
-If you don't want to send metrics per page URL, you can disable this via SKIP_URL_METRICS
+If you don't want to send HTTP metrics per page URL, you can disable this via SKIP_URL_METRICS
 
 Contribute at <a href="https://github.com/uglyrobot/wordpress-statsd">GitHub</a>.
 
@@ -69,6 +71,9 @@ Contribute at <a href="https://github.com/uglyrobot/wordpress-statsd">GitHub</a>
 Want to implement batch collection and send of metrics via one or minimal UDP packets required based on connection time.
 
 == Changelog ==
+
+= 0.2 =
+* Ability to disable per url metrics for HTTP calls via SKIP_URL_METRICS define - props @Sophie Haskins
 
 = 0.1 =
 * Initial Release
