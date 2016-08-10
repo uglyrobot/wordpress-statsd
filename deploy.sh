@@ -5,7 +5,7 @@
 # The difference is that this script lives in the plugin's git repo & doesn't require an existing SVN repo.
 
 # main config
-PLUGINSLUG=${PWD##*/} # returns basename of current directory
+PLUGINSLUG="statsd" # returns basename of current directory
 CURRENTDIR=`pwd`
 MAINFILE="statsd.php" # this should be the name of your main php file in the wordpress plugin
 
